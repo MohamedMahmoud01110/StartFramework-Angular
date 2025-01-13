@@ -1,0 +1,57 @@
+h2 {
+  color: #2c3e50;
+}
+.star::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: #2c3e50;
+}
+.star::before {
+  content: "";
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: #2c3e50;
+}
+.w-55 {
+  width: 55%;
+}
+label {
+  color: #1abc9c;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  transition: all 0.6s;
+}
+.top-25 {
+  top: -25px;
+}
+button {
+  background-color: #1abc9c;
+  color: white;
+}
+.btn:hover {
+  color: white;
+  background-color: #1abc9c;
+}
+.form-control {
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 0;
+  margin-bottom: 35px;
+}
+.form-control:focus {
+  outline: 0;
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  .w-55 {
+    width: 85%;
+  }
+}

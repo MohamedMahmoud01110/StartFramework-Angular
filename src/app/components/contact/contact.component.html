@@ -1,0 +1,65 @@
+<div class="container py-5">
+  <div class="header mb-5 text-center">
+    <h2 class="text-uppercase mb-3 fs-1 fw-bolder">contact section</h2>
+    <span class="star position-relative">
+      <i class="fa-solid fa-star"></i>
+    </span>
+  </div>
+  <div class="form w-55 m-auto pt-3">
+    <div class="position-relative">
+      <label for="userName" class="form-label" [class.top-25]="userName">
+        Username:
+      </label>
+      <input
+        type="text"
+        class="form-control"
+        id="userName"
+        placeholder="Username"
+        [(ngModel)]="userName"
+      />
+    </div>
+    <div class="position-relative">
+      <label for="userAge" class="form-label" [class.top-25]="userAge">
+        User Age:
+      </label>
+      <input
+        type="number"
+        class="form-control"
+        id="userAge"
+        placeholder="User Age"
+        [(ngModel)]="userAge"
+      />
+    </div>
+    <div class="position-relative">
+      <label for="UserEmail" class="form-label" [class.top-25]="userEmail">
+        User E-mail:
+      </label>
+      <input
+        type="email"
+        class="form-control"
+        id="UserEmail"
+        placeholder="User E-mail"
+        [(ngModel)]="userEmail"
+      />
+    </div>
+    <div class="position-relative">
+      <label
+        for="userPassword"
+        class="form-label"
+        [class.top-25]="userPassword"
+      >
+        User Password:
+      </label>
+      <input
+        type="password"
+        class="form-control"
+        id="userPassword"
+        placeholder="User Password"
+        [(ngModel)]="userPassword"
+      />
+    </div>
+    <div>
+      <button class="btn mt-1">Send Message</button>
+    </div>
+  </div>
+</div>

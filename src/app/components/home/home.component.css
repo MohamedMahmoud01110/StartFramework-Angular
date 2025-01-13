@@ -1,0 +1,25 @@
+.home {
+  background-color: #1abc9c;
+  padding-block: 12vh;
+}
+.home img {
+  width: 250px;
+}
+.home .caption span::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}
+.home .caption span::before {
+  content: "";
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}

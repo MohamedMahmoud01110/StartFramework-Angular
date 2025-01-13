@@ -1,0 +1,76 @@
+<!-- Portfolio -->
+
+<div class="container py-5 text-center">
+  <div class="header mb-3">
+    <h2 class="text-uppercase mb-3 fs-1 fw-bolder">portfolio component</h2>
+    <span class="star position-relative">
+      <i class="fa-solid fa-star"></i>
+    </span>
+  </div>
+  <div class="row g-5">
+    <div class="col-md-4">
+      <div class="item rounded-3 overflow-hidden position-relative" (click)="openModal('./images/port1.png')" >
+        <img src="./images/port1.png" class="w-100" alt="" />
+        <div class="overlay position-absolute d-flex justify-content-center align-items-center">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item rounded-3 overflow-hidden position-relative" (click)="openModal('./images/port2.png')">
+        <img src="./images/port2.png" class="w-100" alt="" />
+        <div
+          class="overlay position-absolute d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item rounded-3 overflow-hidden position-relative" (click)="openModal('./images/port3.png')">
+        <img src="./images/port3.png" class="w-100" alt="" />
+        <div
+          class="overlay position-absolute d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item rounded-3 overflow-hidden position-relative" (click)="openModal('./images/port1.png')">
+        <img src="./images/port1.png" class="w-100" alt="" />
+        <div
+          class="overlay position-absolute d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4" >
+      <div class="item rounded-3 overflow-hidden position-relative" (click)="openModal('./images/port2.png')">
+        <img src="./images/port2.png" class="w-100" alt="" />
+        <div
+          class="overlay position-absolute d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="item rounded-3 overflow-hidden position-relative" (click)="openModal('./images/port3.png')">
+        <img src="./images/port3.png" class="w-100" alt="" />
+        <div
+          class="overlay position-absolute d-flex justify-content-center align-items-center"
+        >
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="boxContainer" [class.show]="isModalOpen" (click)="closeModal($event)">
+  <div id="boxItem" >
+    <img [src]="imgSrc" alt=""/>
+  </div>
+</div>

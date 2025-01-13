@@ -1,0 +1,22 @@
+.about {
+  background-color: #1abc9c;
+  padding-block: 25vh;
+}
+.about .star::after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}
+.about .star::before {
+  content: "";
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: white;
+}
